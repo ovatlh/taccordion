@@ -1,0 +1,22 @@
+.t-accordion-container,
+.t-accordion-container .t-accordion,
+.t-accordion-container .t-accordion .t-content {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.t-accordion-container {
+  display: grid;
+  grid-template-rows: 0fr;
+}
+.t-accordion-container.animated {
+  transition: grid-template-rows 0.3s ease;
+}
+.t-accordion-container .t-accordion {
+  overflow: hidden;
+}
+.t-accordion-container.is-open {
+  grid-template-rows: 1fr;
+}

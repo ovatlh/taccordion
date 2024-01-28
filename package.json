@@ -1,0 +1,7 @@
+{
+    "name": "taccordion",
+    "version": "0.1.0",
+    "description": "accordion component library",
+    "main": "dist/v0.1.0/taccordion.js",
+    "author": "@ovatlh"
+}

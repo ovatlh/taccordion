@@ -1,0 +1,123 @@
+button {
+  padding: 0.2em 1em;
+  cursor: pointer;
+}
+
+.t-accordion-container.animated.custom-animation-03 {
+  transition: grid-template-rows 0.3s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+html {
+  background-color: whitesmoke;
+  overflow-y: scroll;
+}
+
+body {
+  display: grid;
+  gap: 2em;
+  padding: 6em 2em;
+  grid-template-columns: 1fr;
+}
+
+a {
+  color: blue;
+  font-size: 2em;
+  background-color: white;
+}
+
+.cursor-poiner {
+  cursor: pointer;
+}
+
+.card {
+  justify-self: center;
+  max-width: 75ch;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.1));
+  margin: 0;
+  padding: 1.5em;
+  box-sizing: border-box;
+  line-height: 1;
+}
+.card h1 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+.card .t-accordion-container .t-accordion .t-content {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 1em;
+}
+.card .t-accordion-container.is-open {
+  margin-top: 1em;
+}
+
+.card-grid-container {
+  display: grid;
+  gap: 3em;
+  grid-auto-flow: row;
+  padding: 3em;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.card-grid-container .card {
+  padding: 0.5em;
+}
+
+.card p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1;
+}
+
+.menu-container {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  max-width: 300px;
+}
+.menu-container.menu-right {
+  right: 1em;
+}
+.menu-container.menu-left {
+  left: 1em;
+}
+.menu-container .menu-btn-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.menu-container .menu-btn {
+  padding: 1em 3.5em;
+}
+.menu-container.menu-right .menu-btn {
+  justify-self: end;
+}
+.menu-container.menu-left .menu-btn {
+  justify-self: start;
+}
+.menu-container .t-accordion-container .t-accordion .t-content {
+  display: grid;
+  gap: 0.5em;
+  grid-auto-flow: row;
+  margin-bottom: 0.5em;
+}
+.menu-container.menu-right .t-accordion-container .t-accordion .t-content {
+  justify-items: end;
+}
+.menu-container.menu-left .t-accordion-container .t-accordion .t-content {
+  justify-items: start;
+}
+
+.btn-menu-option {
+  padding: 0.2em 1em;
+  transition: 0.3s ease;
+}
+.btn-menu-option:hover {
+  padding: 0.8em 1.5em;
+}
